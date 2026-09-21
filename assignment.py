@@ -2,7 +2,6 @@
 
 # Exercise 1
 def count_characters(text):
-    text=input("")
     num=len(text)
     return num
 
@@ -15,7 +14,7 @@ def remove_spaces(text):
 def count_vowels(text):
     count = 0
     for i in text:
-        if i == "a" or i == "e" or i == "i" or i == "o" or i == "u":
+        if i =="aeiouAEIOU":
             count += 1
     return count
 # Exercise 4
@@ -37,7 +36,6 @@ def count_words(text):
     return count
 # Exercise 6
 def find_longest_word(text):
-    sentence = input("  ")
-    words = sentence.split()
+    words = text.split()
     longest_word = max(words, key=len)
     return longest_word
